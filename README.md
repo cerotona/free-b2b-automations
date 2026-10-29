@@ -22,9 +22,9 @@ Turn repetitive revenue operations into reviewable workflows and catch common co
 
 ## Upgrade to the complete products
 
-[Get the Full B2B n8n Automation Pack Pro](https://gumroad.com/l/b2b-n8n-automation-pack-pro)
+[Get the Full B2B n8n Automation Pack Pro](https://darnell15.gumroad.com/l/b2b-n8n-automation-pack-pro)
 
-[Get the Autonomous Code Auditor Skill Pro](https://gumroad.com/l/autonomous-code-auditor-skill-pro)
+[Get the Autonomous Code Auditor Skill Pro](https://darnell15.gumroad.com/l/autonomous-code-auditor-skill-pro)
 
 ## Responsible use
 
