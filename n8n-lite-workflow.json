@@ -1,0 +1,12 @@
+{
+  "name":"B2B Lead Capture Lite",
+  "nodes":[
+    {"parameters":{"httpMethod":"POST","path":"lead-lite","responseMode":"onReceived","options":{}},"id":"lite-webhook","name":"Lead Webhook","type":"n8n-nodes-base.webhook","typeVersion":2,"position":[-700,0]},
+    {"parameters":{"url":"={{$json.website_url}}","options":{"response":{"response":{"responseFormat":"text"}}}},"id":"lite-http","name":"Read Public Site","type":"n8n-nodes-base.httpRequest","typeVersion":4.2,"position":[-440,0]},
+    {"parameters":{"resource":"chat","operation":"message","modelId":"gpt-4o-mini","messages":{"values":[{"role":"user","content":"Summarize this public company page in three bullets: {{$json.body || $json.data || $json}}"}]},"options":{}},"id":"lite-ai","name":"AI Summary","type":"@n8n/n8n-nodes-langchain.openAi","typeVersion":1.8,"position":[-160,0]},
+    {"parameters":{"resource":"message","operation":"post","channel":"={{$env.SLACK_LITE_CHANNEL || '#sales-ops'}}","text":"Lite lead summary for {{$('Lead Webhook').item.json.company}}: {{$json.text || $json}}","otherOptions":{}},"id":"lite-slack","name":"Slack Alert","type":"n8n-nodes-base.slack","typeVersion":2.3,"position":[120,0]}
+  ],
+  "connections":{"Lead Webhook":{"main":[[{"node":"Read Public Site","type":"main","index":0}]]},"Read Public Site":{"main":[[{"node":"AI Summary","type":"main","index":0}]]},"AI Summary":{"main":[[{"node":"Slack Alert","type":"main","index":0}]]}},
+  "settings":{"executionOrder":"v1"},
+  "meta":{"blueprintBusiness":{"edition":"free-lite","upgrade":"https://gumroad.com/l/b2b-n8n-automation-pack-pro"}}
+}
