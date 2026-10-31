@@ -11,6 +11,12 @@ Turn repetitive revenue operations into reviewable workflows and catch common co
 | `n8n-lite-workflow.json` | Webhook -> public site read -> AI summary -> Slack alert |
 | `CODE_AUDIT_CHECKLIST.md` | Eight high-signal architecture, security, wiring, and test checks |
 
+### $5 Starter Tier
+
+**Rapid n8n Webhook Alert Engine (Slack & Discord Drop-In)** — Save 2 hours formatting Slack blocks & Discord embeds. Drop-in JSON ready in 60 seconds.
+
+[Get the $5 Rapid Alert Engine](https://darnell15.gumroad.com/l/n8n-rapid-alert-engine)
+
 ## Free Lite vs. Pro Bundle
 
 | Capability | Free Lite | Pro Bundle |
