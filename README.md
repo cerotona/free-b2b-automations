@@ -1,5 +1,7 @@
 # Free B2B Automation and Code Audit Starter Kit
 
+[![GitHub Stars](https://img.shields.io/github/stars/cerotona/free-b2b-automations?style=flat-square)](https://github.com/cerotona/free-b2b-automations/stargazers) [![MIT License](https://img.shields.io/github/license/cerotona/free-b2b-automations?style=flat-square)](https://github.com/cerotona/free-b2b-automations/blob/main/LICENSE) [![n8n Compatible](https://img.shields.io/badge/n8n-Compatible-EA4B71?style=flat-square&logo=n8n&logoColor=white)](https://n8n.io/) [![Gumroad Store](https://img.shields.io/badge/Gumroad-Store-FF90E8?style=flat-square&logo=gumroad&logoColor=000000)](https://darnell15.gumroad.com/)
+
 Turn repetitive revenue operations into reviewable workflows and catch common codebase risks before they become expensive rework. This free, public-ready starter kit gives you a four-node n8n lead summary workflow and a practical code audit checklist.
 
 ## What is included
